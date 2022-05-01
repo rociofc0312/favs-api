@@ -1,7 +1,7 @@
 require("dotenv").config();
 const bcrypt = require("bcrypt");
 const User = require("./user.model");
-const { signToken } = require("../../auth/auth.service");
+const { signToken } = require("./user.service");
 
 async function createUser(req, res) {
   try {

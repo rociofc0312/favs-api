@@ -2,14 +2,6 @@ const jwt = require("jsonwebtoken");
 const compose = require("composable-middleware");
 const { getUserByEmail } = require("../api/user/user.service");
 
-function signToken(payload) {
-  const token = jwt.sign(payload, process.env.TOKEN_KEY, {
-    expiresIn: "2h",
-  });
-
-  return token;
-}
-
 async function validateToken(token) {
   try {
     const payload = await jwt.verify(token, process.env.TOKEN_KEY);
@@ -42,6 +34,5 @@ function isAuthenticated() {
 }
 
 module.exports = {
-  signToken,
   isAuthenticated,
 };
