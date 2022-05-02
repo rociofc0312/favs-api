@@ -5,7 +5,7 @@ async function createFavList(req, res) {
   const payload = { ...data };
   try {
     const favList = await FavList.create(payload);
-    res.status(200).json(favList);
+    res.status(201).json(favList);
   } catch (error) {
     res.status(400).json({ error });
   }
