@@ -8,6 +8,14 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 
 Before installing, [download and install Node.js](https://nodejs.org/en/download/).
 Node.js v14 or higher is required.
+
+Create a .env file with the following properties:
+```
+MONGODB_URI=[Add DB connection here]
+MONGODB_TEST_URI=[Add DB test connection here]
+TOKEN_KEY=[Add token key]
+```
+
 Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
