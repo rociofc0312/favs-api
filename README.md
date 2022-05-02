@@ -3,7 +3,7 @@
 Favs is a new company that aims to provide a better way to organize your favorite things: music, clothes, courses, etc., all in one place.
 
 ## Installation
-his is a [Node.js](https://nodejs.org/en/) module available through the
+This is a [Node.js](https://nodejs.org/en/) module available through the
 [npm registry](https://www.npmjs.com/).
 
 Before installing, [download and install Node.js](https://nodejs.org/en/download/).
